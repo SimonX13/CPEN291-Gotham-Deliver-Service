@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i|Open+Sans:400,400i,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- <script src="index.js"></script> -->
+
+</head>
+
+<body>
+    <nav id = "navbar">
+        <div id = "logo">
+            <img src = "shoppingcart.png", alt = "">
+        </div>
+        <ul>
+            <li> <a href = "home.html">Home</a> </li>
+            <li> <a href = "background.html">About Us</a> </li>
+            <li> <a href = "order.html">Order</a> </li>
+            <li> <a href = "login.html">Login</a> </li>
+        </ul>
+    </nav>
+    <section id = "home">
+        <h1 class = "h-primary center">Gotham's Delivery Service</h1>
+        <p class = "center">This page allows you login</p>
+        <a href = "order.html"><button class = "btn">Order now<img src = arrow.png></button></a>
+    </section>
+
+    <main>
+        <!-- for account sign up and log in  -->
+        <div class="container1">
+            <div class=" Signin">
+                <div class="signinleft">
+                    <form class="form" id="login">
+                        <h1 class="formTitle">Login</h1>
+                        <div class="formMessage formMessage--error"></div>
+                        <div class="formInput-group">
+                            <input type="text" class="formInput" autofocus placeholder="Username or email">
+                            <!-- <p id="unique" class="formInput-error-message"></p> -->
+                            <div class="formInput-error-message"></div>
+
+                            <div class="formMessage--success"></div>
+                        </div>
+                        <div class="formInput-group">
+                            <input id="passcode" type="password" class="formInput" autofocus placeholder="Password">
+                            <div class="formInput-error-message"></div>
+                        </div>
+                    </form>
+                    <button id="duck" class="formButton">Log in</button>
+                    <!-- <p id="egg"> adsfdgvf </p> -->
+                    <div class="formMessage--success"></div>
+                    <div class="formInput-error-message"></div>
+                    <script>
+                        //var f = document.getElementById("egg");
+                        //function hello() {
+                        //    f.innerHTML = "changed";
+                        //}
+                        //document.getElementById("duck").addEventListener("click", hello);
+
+                        var ff = document.querySelector(".formMessage--success");
+                        var vv = document.querySelector(".formInput-error-message");
+                        var btttn = document.getElementById("duck");
+                        var asd = document.querySelector(".formInput");
+                        var piajsdoufhi = document.getElementById("passcode");
+                        btttn.addEventListener("click", () => {
+                            if (asd.value != "Simon" || piajsdoufhi.value != "13!") {
+                                ff.innerHTML = "";
+                                vv.innerHTML = "error message";
+                                asd.value = "";
+                                piajsdoufhi.value = "";
+                            }
+                            else {
+                                ff.innerHTML = "good message";
+                                vv.innerHTML = "";
+                                asd.value = "";
+                                piajsdoufhi.value = "";
+                            }
+
+                        })
+
+                    </script>
+                    <p class="formText">
+                        <a href="#" class="formLink">Forgot your password?</a>
+                    </p>
+                    <p class="formText">
+                        <a class="formLink" href="home.html" id="linkCreateAccount">Don't have an account? Create
+                            account</a>
+                    </p>
+
+                </div>
+
+                <form class="form form--hidden" id="createAccount">
+                    <h1 class="formRitle">Create Account</h1>
+                    <div class="formMessage formMessage--error"></div>
+                    <div class="formInput-group">
+                        <input type="text" id="signupUsername" class="formInput" autofocus placeholder="Username">
+                        <div class="formInput-error-message"></div>
+                    </div>
+                    <div class="formInput-group">
+                        <input type="text" class="formInput" autofocus placeholder="Email Address">
+                        <div class="formInput-error-message"></div>
+                    </div>
+                    <div class="formInput-group">
+                        <input type="password" class="formInput" autofocus placeholder="Password">
+                        <div class="formInput-error-message"></div>
+                    </div>
+                    <div class="formInput-group">
+                        <input type="password" class="formInput" autofocus placeholder="Confirm password">
+                        <div class="formInput-error-message"></div>
+                    </div>
+                    <button class="formButton" type="submit">Sign up</button>
+                    <p class="formText">
+                        <a class="formLink" href="./" id="linkLogin">Already have an account? Sign in</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </main>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Gotham's Delivery Service</title>
+    <link rel = "stylesheet" href = style.css>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav id = "navbar">
+        <div id = "logo">
+            <img src = "shoppingcart.png" alt = "" onclick = "togglemenu()">
+        </div>
+        <ul>
+            <li > <a  href = "home.html">Home</a> </li>
+            <li > <a  href = "background.html">AboutUs</a> </li>
+            <li > <a  href = "order.html">Order</a> </li>
+            <li > <a  href = "login.html">Login</a> </li>
+        </ul>
+    </nav>
+    <section id = "home">
+        <h1 class = "h-primary center">Gotham's Delivery Service</h1>
+        <p class = "center">The most promising delivery service</p>
+        <p class = "center">Fast && Accurate</p>
+        <a href = "order.html"><button class = "btn">Order now<img src = arrow.png></button></a>
+    </section>
+
+    <section id= "services-container">
+        <h1 class = "h-primary center">Functionality</h1>
+        <div id = "services">
+            <div class = "box">
+                <img src="shoppingcart.png", alt="">
+                <a href = "order.html"><h2 class = "h-secondary center">Order</h2></a>
+                <p class = "center">You can simply choose your destination and package</p>
+            </div>
+            <div class = "box">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/order-status-1851726-1569380.png", alt="">
+                <a href = "status.html"><h2 class = "h-secondary center">Status</h2></a>
+                <p class = "center">You can track where the package is and the status of the car</p>
+            </div>
+            <div class = "box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/536px-Google_Maps_icon_%282020%29.svg.png", alt="">
+                <a href = "map.html"><h2 class = "h-secondary center">Map</h2></a>
+                <p class = "center">You can see the current position of the car on the map</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+       
+
+        function togglemenu() {
+            if (menuList.style.height == "0px") {
+                menuList.style.height = "130px"
+            } else {
+                menuList.style.height = "0px"
+            }
+        }
+       
+    </script>
+</body>
+
+</html>
