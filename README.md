@@ -1,5 +1,5 @@
 # CPEN291-Gotham-Deliver-Service
-**A fullstack project for UBC-CPEN-291(2021/2022)
+**A fullstack project for UBC-CPEN-291(2021/2022) \n
 Tech: HTML, CSS, Bootstrap, Javascript, Node.JS, MicroPython and Lego Ev3.**
 
 I setted up the NodeJs backend and deployed it onto a VM provided by UBC, built the UI of the ordering and status pages. 
